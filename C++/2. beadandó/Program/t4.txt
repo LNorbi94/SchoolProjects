@@ -1,0 +1,20 @@
+
+Almaspite 240 2013.01.01 13
+Almaspite 240 2013.01.03 5
+Almaspite 240 2013.01.05 31
+Almaspite 240 2013.01.06 3
+Almaspite 240 2013.01.07 3
+Almaspite 240 2013.01.08 10
+Almaspite 240 2013.01.09 3
+Almaspite 240 2013.01.10 11
+Almaspite 240 2013.01.11 3
+Almaspite 240 2013.01.13 3
+
+Hamburger 100 2013.02.05 2
+Hamburger 100 2013.02.15 2
+Hamburger 100 2013.02.20 2
+Hamburger 100 2013.02.25 2
+
+Salata 120 2013.03.01 1
+Salata 120 2013.03.11 5
+Salata 120 2013.03.21 10

@@ -1,0 +1,12 @@
+1. grillsütő; jó állapotú; 5000
+2. gyerek bicikli; 14"-os; 200000
+3. roller; piros; 200000
+4. kenyérpirító; fekete; 200000
+8. kenyérpairító; fekete; 1
+
+Kis Péter: 1. 4000
+Szabó Árpád: 1. 5000
+Jó Péter: 2. 6000
+Szabó Péter: 1. 5000
+Kovács Antal: 3. 1000
+Nagy Árpád: 8. 10000 

@@ -1,0 +1,1 @@
+select SUMINCOME('KING') from DUAL;

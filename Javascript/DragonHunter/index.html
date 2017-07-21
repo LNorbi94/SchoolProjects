@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+  Készítő:    Lestár Norbert
+  Neptun kód: A8UZ7T
+  E-mail cím: lestarnrbert@inf.elte.hu
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="theme/style.css" rel="stylesheet">
+    <title> Sárkányharcos </title>
+    <script type="text/javascript" src="gameLogic/gui.js"></script>
+    <script type="text/javascript" src="gameLogic/gameLogic.js"></script>
+    <script type="text/javascript" src="gameLogic/variables.js"></script>
+    <script type="text/javascript" src="gameLogic/complementaryFunctions.js"></script>
+  </head>
+  <body>
+    <div id="gameStarter">
+      <img src="theme/logo.png" alt="Sárkány">
+      <h2> Új játék kezdése </h2>
+      <form id="startForm">
+        <p> Pálya mérete: </p>
+        <input type="number" id="fieldRowSize" value="10" /> x <input type="number" id="fieldColSize" value="10" /> <br>
+        <p> Tereptárgyak száma: </p>
+        <input type="number" min="0" max="20" id="objects" value="2" required>
+        <input type="button" value="Új játék kezdése!" id="start">
+        <ul id="errorList">
+        </ul>
+      </form>
+    </div>
+    <div id="game">
+      <table id="gameTable">
+      </table>
+      <div id="topBar"> <p id="score"> Pontszám: <span id="points">1</span> </p>
+      <p id="scroll"> Aktív tekercs: <span id="activeScroll">-</span> </p> </div>
+      <div> <p id="newGame"> <input type="button" value="Új játék!" id="newGameBtn"> </p> </div>
+    </div>
+  </body>
+</html>

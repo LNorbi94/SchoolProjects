@@ -1,0 +1,195 @@
+\documentclass[12pt]{report}
+\usepackage[a4paper,top=15mm, bottom=25mm, left=23mm, right=23mm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{stuki}
+
+\renewcommand{\labelitemi}{$-$}
+\renewcommand{\labelitemii}{}
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=2.8em\indent}}
+
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+
+\tikzset{
+  basic/.style  = {draw, text width=3cm, drop shadow, font=\sffamily, rectangle},
+  root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                   fill=blue!30},
+  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=blue!20,
+                   text width=15em}
+}
+
+\begin{document}
+\begin{tabular}{lcr}
+\textbf{Lestár Norbert} & 2. beadandó / 11. feladat  & 2015. április 24. \\
+\textbf{Neptun kód:} A8UZ7T \\
+lestar.norbert@gmail.com \\
+6. csoport \\
+\end{tabular}
+\paragraph{Feladat} \hspace{0pt} \\
+\textit{ Egy étteremben a pincérek által felvett rendeléseket egy szekvenciális input fájlban tartják nyilván az  ételek  neve,  azon  belül  a rendelések időpontja szerint  rendezett  formában. Feltehetjük, hogy a fájl nem üres. A tárolt adatok: a rendelt étel neve, a 
+rendelés időpontja, rendelt  adagok száma, egy adag ára. Melyik étel hozta az étteremnek a legtöbb bevételt (összesített darab*egységár)? }
+\paragraph{Specifikáció} \hspace{0pt} \\
+A = ( t : Enor (Food), max : $\mathbb{S}$, e : E ) \newline
+\forceindent Food = \textbf{rec}(id : $\mathbb{Z}$, name : $\mathbb{S}$, time : $\mathbb{S}$, count : $\mathbb{N}$, price : $\mathbb{N}$, income : $\mathbb{N}$) \newline
+Ef = ( t = t$_{0}$ $\wedge$ $|$t$| >$ 0 ) \newline
+Uf = ( (max, e) = MAX$_{e \in t_{0}} <$ e.income $>$ ) \newline
+\paragraph{Absztrakt program} \hspace{2pt} \\ 
+
+\begin{stukibox}[14cm]
+\stm*{Maximum kiválasztás}
+\stm[3]{t \rightarrow x sorainak felsoroloja \\
+max, 0 \rightarrow max, < > \\
+f(e) \rightarrow < e.income >
+}
+\end{stukibox}%
+\hfill \newline
+\begin{stukibox}[14cm]
+\stm*{t.First() }
+\stm*{e, max := t.Current(), e.income }
+\stm*{ t.Next() }
+\begin{WHILE}{4}{\stm*{$\neg$t.End()}}
+\stm{e := t.Current()}
+\begin{IF}{1}
+{\stm{max < e.income} }
+\stm{max := e.income}
+\ELSE
+\stm*{SKIP}
+\end{IF}
+\stm{t.Next()}
+\end{WHILE}
+\end{stukibox}%
+
+\paragraph{Felsoroló} \hspace{0pt} \\
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+enor(Food) & First(), Next(), Current(), End() \\ \hline
+\begin{tabular}[c]{@{}l@{}}line : String, stat : Státusz, file : InFile(String) \\ actual : Food,\\ over: $\mathbb{L}$\end{tabular} & \begin{tabular}[c]{@{}l@{}}First() $\rightarrow$ actual.id := 0, stat, line, file : read; Next()\\ Next() $\rightarrow$ a táblázat után\\ Current() $\rightarrow$ actual \\ End() $\rightarrow$ over\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+\forceindent A \textit{Next()} műveletnek az alábbi feladatot kell megoldania: \hspace{0pt} \\
+
+\forceindent Adott egy sorokra tördelt szöveges állomány ahonnan már kiolvastuk az első sort (ez
+van a sor változóban, ha sikeres volt ez a korábbi olvasás) és
+soron következő sort kell feldolgoznunk. Adott a korábbi ételek blokkjának sorszáma
+(actual.id). Először is átolvassuk az ez előtti üres sorokat. Ha nem találunk ezek után egy
+nem üres sort, akkor a vége változót igazra állítjuk (nincs több étel). Ha találunk, akkor a
+vége változót hamisra állítjuk, az actual.id értékét eggyel növeljük, és az actual többi mezőjét az
+itt kezdődő sorok alapján kitöltjük: beállítjuk az étel nevét, megszámoljuk a rendelt ételek mennyiségét, továbbá kiszámoljuk hogy mekkora bevételre tettünk szert általuk. Az első vizsgálathoz soronként külön meg kell számolni a remdelések számát, majd a következő rendelés lépés előtt összesíteni azt. Az olvasást a következő üres sorig, vagy a fájl végéig tesszük. \hspace{0pt} \\
+
+A$^{Next}$ = (file: infile(String), line: String, stat Státusz, over: $\mathbb{L}$, actual: Food)\newline
+Ef$^{Next}$ = (file=file$^{1} \wedge$ line=line$^{1} \wedge$ stat=stat$^{1} \wedge$ actual=actual$^{1}$)\newline
+Uf$^{Next}$ = (stat$^{2}$, line$^{2}$, file$^{2}$ = $\mathbf{select}_{line \in (line^{1},file^{1})}$(stat = corrupted $\vee$ line $\neq$ üres) $\wedge$ \newline
+\forceindent (over = (stat$^{2}$=correct)) $\wedge$ \newline
+\forceindent ($\neg$over $\rightarrow$ \newline
+\forceindent actual.id = actual$^{1}$.id + 1 \newline
+\forceindent $\wedge$ actual.count, stat, line, file = $\sum\limits_{line \in (line^{2}, file^{2})}^{line \neq \ddot{u}res}$ actual.count \newline
+\forceindent $\wedge$ actual.income = actual.price * actual.count
+)\newline
+
+\begin{stuki*}{ Next() }
+\begin{WHILE}{1}{\stm*{line=üres $\wedge$ stat = correct}}
+\stm{stat, line, file : read}
+\end{WHILE}
+\stm*{over := stat=corrupted }
+\begin{IF}{14}{ \stm*{$\neg$ over } }
+\stm{ actual.id := actual.id + 1 }
+\stm{ actual.count := 0 }
+\stm{ actual.income := 0 }
+\begin{WHILE}{8}{\stm*{ line $\neq$ üres $\wedge$ stat = correct }}
+\stm{ stat, word, line : read }
+\stm{ actual.name := word }
+\stm{ stat, word, line : read }
+\stm{ actual.price := word }
+\stm{ stat, word, line : read }
+\stm[2]{ actual.count :=\\ actual.count + word }
+\stm{ stat, line, file : read }
+\end{WHILE}
+\stm[2]{ actual.income 
+:= \\ actual.price * actual.count }
+\ELSE
+\stm*{SKIP}
+\end{IF}
+\end{stuki*}%
+
+\paragraph{Implementáció} \hspace{0pt} \\
+\textit{Program váz} \\
+A program több állományból áll: main.cpp, class.h, class.cpp.
+\pagebreak
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{main.cpp} & \textbf{class.h}                                                                                                                          & \textbf{class.cpp}                                                  \\ \hline
+int main()        & \begin{tabular}[c]{@{}l@{}}struct Food\\ enum Status\\ class Enor\\ Enor ()\\ void First ()\\ Food Current () \\ bool End ()\end{tabular} & \begin{tabular}[c]{@{}l@{}}void Read ()\\ void Next ()\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+Függvények kapcsolódási szerkezete: \\
+main()-$>$ Enor()\\
+\forceindent -$>$ First()\leavevmode{\parindent=1.2em\indent}-$>$ Read()\\
+\forceindent -$>$ Next()\leavevmode{\parindent=1.21em\indent}-$>$ Read()\\
+\forceindent -$>$ End()\\
+\forceindent -$>$ Current() \newline
+Felsoroló osztálya
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{|X|l}
+\hline
+\begin{tabular}[c]{@{}l@{}} \textbf{class} Enor$\lbrace$\\
+\forceindent\textbf{private:}\\ \forceindent\forceindent std::ifstream file;\\ \forceindent\forceindent std::stringstream line;\\ \forceindent\forceindent Status stat;\\ \forceindent\forceindent Food actual;\\ \forceindent\forceindent \textbf{bool} over;
+\\ \forceindent\forceindent \textbf{void} Read();\\
+\\ \forceindent\textbf{public:}\\ \forceindent\forceindent Enor(\textbf{const} std::string \&str);\\ \forceindent\forceindent \textbf{void} First() $\lbrace$ actual.id = 0; Read(); Next(); $\rbrace$\\ \forceindent\forceindent \textbf{void} Next();\\ \forceindent\forceindent Food Current() \textbf{const} $\lbrace$ \textbf{return} actual; $\rbrace$\\ \forceindent\forceindent \textbf{bool} End() \textbf{const} $\lbrace$ \textbf{return} over; $\rbrace$\\  $\rbrace$;\end{tabular} \\ \hline
+\end{tabularx}
+\end{table}
+
+A szöveges állomány soronként olvasását a getline(file, line) utasítás végzi, amelyet beágyazunk a Read() metódusba úgy, hogy a linet stringstream típusú adatként adja vissza, illetve beállítsa az olvasás stat státuszát. \newline
+A stringstream típusú line szavainak olvasása a >> operátorral történik. Üres egy sor, ha string üres. \newline
+\pagebreak
+\paragraph{Tesztelési terv} \hspace{0pt} \\
+A megoldásban két helyen alkalmaztunk programozási tételt, a bekezdések és a sorok szintjén. \newline
+\begin{itemize}[noitemsep]
+\item Ételek szintjén maximum kiválasztás tesztesetei:
+\begin{itemize}[noitemsep]
+\item \textbf{intervallum hossza} szerint
+\begin{enumerate}[noitemsep]
+\item Üres állomány.
+\item Csak üres sorokat tartalmazó állomány.
+\item Egyetlen ételt tartalmazó állomány.
+\item Több ételt tartalmazó állomány.
+\end{enumerate}
+\end{itemize}
+\begin{itemize}[noitemsep]
+\item \textbf{intervallum eleje és vége} szerint
+\begin{enumerate}[noitemsep]
+\item Első étel "a maximum".
+\item Utolsó étel "a maximum".
+\item Több étel van, és nem az első vagy utolsó a maximum.
+\end{enumerate}
+\end{itemize}
+\end{itemize}
+\begin{itemize}[noitemsep]
+\item Egy ételhez tartozó sorok szintjén intervallum és egy összegzés egybefoglalt tesztesetei:
+\begin{itemize}[noitemsep]
+\item \textbf{intervallum hossza} szerint
+\begin{enumerate}[noitemsep]
+\item Egyetlen nem üres sor.
+\item Több nem üres sor.
+\end{enumerate}
+\end{itemize}
+\begin{itemize}[noitemsep]
+\item \textbf{intervallum eleje és vége} szerint
+\begin{enumerate}[noitemsep]
+\item Több sor, ahol csak a legelső nap történt rendelés.
+\item Több sor, ahol csak a legutolsó nap történt rendelés.
+\end{enumerate}
+\end{itemize}
+\end{itemize}
+\end{document}

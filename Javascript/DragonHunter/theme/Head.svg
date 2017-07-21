@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="400px" height="400px" version="1.1">
+  
+  <title> Dragon's Head. </title>      
+
+  <rect x="0" y="0" width="370px" height="400px" rx="60" ry="" style="fill: rgb(54, 56, 27)" />
+  
+  <circle cx="300" cy="100" r="20" style="fill: rgb(178, 212, 143)" />
+  <circle cx="300" cy="300" r="20" style="fill: rgb(178, 212, 143)" />
+  
+  <circle cx="385" cy="200" r="15" style="fill: rgb(54, 56, 27)" />
+
+</svg>

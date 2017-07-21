@@ -1,0 +1,6 @@
+1. beadandó feladat. Beadási határidő: 2016-04-04. 
+Készítsen C programot, amely rendszerhívások alkalmazásával megoldja a következő feladatot:
+
+A "Best of ŰBER" társaság közösségi, telekocsi rendszerű utazás szervezéssel foglalkozik. A társaság Krakkóba, Prágába, Bécsbe indít "JÁRATOT", de igény esetén ezt a listát bővítheti vagy érdeklődés hiányában szűkítheti! Az érdeklődők válogathassanak a kínálatból. Minden városba csak a legközelebbi indulási időpontot tároljuk. A jelentkezőknél rögzítsük a jelenkező nevét, a jelentkezési időt(ezt nem kell bekérni), a célállomást és a jelentkező telefonszámát!
+
+Készítsünk C programot, amellyel lehessen célállomást listáztatni, újat felvenni, törölni. Tudjuk rögzíteni egy jelentkező adatait és tudjuk azt módosítani vagy törölni! Lehessen listázni tetszőleges járat információkat, utaslistával! Az adatokat fájlban tároljuk.

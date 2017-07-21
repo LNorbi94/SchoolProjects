@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="600px" height="400px" version="1.1">
+  <title> Kellemes húsvéti ünnepeket! </title>
+  <style type="text/css">
+    <![CDATA[
+    
+    .background
+    {
+      fill: #c1d7f5;
+      width: 100%;
+      height: 100%
+    }
+    
+    .chickenEye
+    {
+      fill: url(#whiteToBlack)
+    }
+    
+    .bunnyEyes
+    {
+      fill: white;
+      stroke: red
+    }
+    
+    .easterText
+    {
+      font-family: sans-serif;
+      font-size: 1.7em;
+      text-anchor: middle
+    }
+    
+    .madeBy
+    {
+      font-size: 1em
+    }
+    
+    ]]>
+  </style>
+  
+  <defs>
+    <path id="fontPath" d="M 100 350 Q 450 100 18 500 50 110 1000 600" />
+    <linearGradient id="yellowToOrange">
+      <stop offset="0%" style="stop-color: yellow" />
+      <stop offset="100%" style="stop-color: orange" />
+    </linearGradient>
+    <linearGradient id="yToUD" xlink:href="#yellowToOrange" x2="0%" y2="100%"/>
+    <linearGradient id="blueToDarkBlue">
+      <stop offset="0%" style="stop-color: #29abdb" />
+      <stop offset="100%" style="stop-color: #4b7e91" />
+    </linearGradient>
+    <linearGradient id="bToUD" xlink:href="#blueToDarkBlue" x2="0%" y2="100%"/>
+    <radialGradient id="whiteToBlack">
+     <stop offset="20%" style="stop-color: white" />
+     <stop offset="50%" style="stop-color: black" />
+    </radialGradient>
+    <symbol id="chickenArm">
+      <ellipse cx="0" cy="0" rx="10" ry="20" style="fill: url(#yToUD)" />
+    </symbol>
+    <symbol id="chickenLeg" style="stroke: brown">
+      <line x1="10" y1="0" x2="8" y2="15" />
+      <line x1="10" y1="5" x2="0" y2="15" />
+      <line x1="10" y1="5" x2="16" y2="15" />
+    </symbol>
+    <radialGradient id="whiteToBlack">
+     <stop offset="20%" style="stop-color: white" />
+     <stop offset="50%" style="stop-color: black" />
+    </radialGradient>
+    <symbol id="bunnyArm">
+      <ellipse cx="10" cy="0" rx="10" ry="20" style="fill: url(#bToUD)" />
+    </symbol>
+    <symbol id="bunnyLeg">
+      <circle cx="10" cy="10" r="10" style="fill: url(#bToUD)" />
+    </symbol>
+    <symbol id="bunnyEar">
+      <ellipse cx="10" cy="30" rx="10" ry="30" style="fill: url(#bToUD)" />
+      <ellipse cx="10" cy="30" rx="6" ry="20" style="fill: white" />
+    </symbol>
+  </defs>
+
+  <rect x="0" y="0" class="background" />
+  
+  <svg  x="110" y="0" width="200px" height="340px" preserveAspectRatio="xMaxYMid slice"
+        viewbox="0 -30 200 450">
+    <g transform="translate(0, 177)">
+      <use xlink:href="#chickenArm" transform="translate(179, 0) rotate(-60)" />
+    	<use xlink:href="#chickenArm" transform="translate(22, 0) rotate(-120) scale(1, -1)" />
+    </g>
+    <!-- Chicken's body.. -->
+    <ellipse cx="100" cy="200" rx="90" ry="90" style="fill: url(#yToUD)" />
+    <!-- ..and head -->
+    <circle cx="100" cy="100" r="70" style="fill: url(#yToUD)" />
+
+    <ellipse cx="70" cy="100" rx="5" ry="6" class="chickenEye" />
+    <ellipse cx="130" cy="100" rx="5" ry="6" class="chickenEye" />
+    
+    <!-- Beak -->
+    <polygon points="80, 120, 120, 120, 100, 140" style="fill: brown" />
+    
+    <use xlink:href="#chickenLeg" transform="translate(52, 271) rotate(200) scale(1, -1)"/>
+    <use xlink:href="#chickenLeg" transform="translate(152, 271) rotate(-30)"/>
+  </svg>
+    
+  <svg x="350" y="20" width="200px" height="340px">    
+    <use xlink:href="#bunnyLeg" transform="translate(72, 271) rotate(210) scale(1, -1)"/>
+    <use xlink:href="#bunnyLeg" transform="translate(130, 285) rotate(-90)"/>
+
+    <use xlink:href="#bunnyEar" transform="translate(40, 5) rotate(-15)"/>
+    <use xlink:href="#bunnyEar" transform="translate(140, 0) rotate(15)"/>
+    
+    <!-- Body -->
+    <ellipse cx="100" cy="200" rx="60" ry="90" style="fill: url(#bToUD)" />
+    <ellipse cx="100" cy="100" rx="50" ry="70" style="fill: url(#bToUD)" />
+
+    <use xlink:href="#bunnyArm" transform="translate(145, 177) rotate(60) scale(1, 2)"/>
+    <use xlink:href="#bunnyArm" transform="translate(55, 177) rotate(115) scale(1, -2)"/>
+
+    <!-- Eyes -->
+    <ellipse cx="70" cy="100" rx="5" ry="13" class="bunnyEyes" />
+    <ellipse cx="130" cy="100" rx="5" ry="13" class="bunnyEyes" />
+    
+    <!-- Mouth -->
+    <line x1="100" y1="110" x2="100" y2="130" style="stroke: white" />
+    <path d="M 80 120 Q 90 140 100 130" style="stroke: white; fill: none"/>
+    <path d="M 120 120 Q 110 140 100 130" style="stroke: white; fill: none"/>
+  </svg>
+    
+
+  <text class="easterText">
+  	<textPath xlink:href="#fontPath" startOffset="50%">
+  		Kellemes húsvéti ünnepeket!
+  	</textPath>
+  </text>
+    
+  <text class="madeBy" transform="rotate(90, 20, 30) skewX(30)" x="10" y="40">
+    Készítette: Lestár Norbert (A8UZ7T)
+  </text>
+</svg>

@@ -1,0 +1,105 @@
+/* Background from http://subtlepatterns.com/ */
+body
+{
+  background: url("bg.png") repeat;
+  background-color: gray;
+  color: white;
+  height: 100%;
+}
+
+#gameStarter
+{
+  background-color: rgb(230, 220, 225);
+  color: black;
+  width: 500px;
+  height: 550px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 130px auto;
+}
+
+#gameStarter img
+{
+  border: solid thin black
+}
+
+#gameStarter h2
+{
+  text-align: right;
+  border-bottom: solid thin grey;
+}
+
+#errorList
+{
+  color: rgb(203, 41, 41);
+  background-color: inherit;
+}
+
+#game
+{
+  background-color: rgb(174, 206, 139);
+  color: rgb(54, 56, 27);
+  width: 50%;
+  margin: 130px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid thin rgb(54, 56, 27);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+
+#gameTable
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: solid thin rgb(54, 56, 27);
+  margin: 10px auto;
+  background-color: rgb(142, 179, 103);
+  color: rgb(54, 56, 27);
+  float: none;
+}
+#topBar
+{
+  background-color: rgb(142, 179, 103);
+  color: inherit;
+  width: 100%;
+}
+
+#gameTable td
+{
+  width: 30px;
+  max-width: 30px;
+  height: 30px;
+  max-height: 30px;
+  padding: 0;
+}
+
+#score
+{
+  background-color: rgb(142, 179, 103);
+  font-size: 1.2em;
+  float: left;
+  padding: 10px;
+  border: solid thin rgb(54, 56, 27);
+}
+
+#scroll
+{
+  background-color: rgb(142, 179, 103);
+  font-size: 1.2em;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  float: right;
+  padding: 10px;
+  border: solid thin rgb(54, 56, 27);
+}
+#newGame
+{
+  background-color: rgb(142, 179, 103);
+  float: right;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 100px;
+  border: solid thin rgb(54, 56, 27);
+}

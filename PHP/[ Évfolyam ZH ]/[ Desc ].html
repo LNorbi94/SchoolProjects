@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ZH leírása </title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h2 id="feladat-leírása">Feladat leírása</h2>
+    <p>Készíts egy üzenőfalat! Az üzenőfalra üzenetek írhatók ki bizonyos kategóriákban.</p>
+    <ol style="list-style-type: decimal">
+    <li><p>Készíts egy üzenet felvitelére alkalmas beviteli mezőt. Ehhez egy oldalon vegyél fel egy többsoros beviteli mezőt; ez szolgál majd az üzenet begépelésére. JavaScripttel a következő részfeladatokat oldd meg, amelyek mindegyike gépelés közben frissüljön:</p>
+    <ol style="list-style-type: lower-alpha">
+    <li>Írd ki a szöveges beviteli mező mellett, hogy hány karakterből áll az üzenet.</li>
+    <li>Ha az üzenet hossza elérte a 160 karaktert, akkor a beviteli mező keretét 10px-re vastagítsd meg. Egyébként 1px vastag legyen.</li>
+    <li>A beviteli mező alatt előnézetként jelenítsd meg a beírt szöveget.</li>
+    <li>A beírt szövegbeli hashtageket (<code>#</code> karakterrel kezdődő szavak, pl. <code>#euro2016</code>) alakítsd linkké az előnézetben. A link a twitterre mutasson (pl. <code>https://twitter.com/hashtag/euro2016</code>), a szöveg maradjon a hashtag.</li>
+    <li>Ugyanezt tedd meg a <code>@</code> karakterrel kezdődő szavakkal, amik twitter felhasználókra mutatnak, pl. <code>@adamtarcsi</code> szó köré a <code>https://twitter.com/adamtarcsi</code> hivatkozású linket kell tenni.</li>
+    <li>A <code>&lt;</code> és <code>&gt;</code> karaktereket helyettesítsd a nekik megfelelő HTML entitással (<code>&amp;lt;</code> és <code>&amp;gt;</code>).</li>
+    <li>Ha az <code>ELTE</code> szó szerepel a szövegben, akkor legyen a beviteli mező kerete zöld.</li>
+    </ol>
+    <p>A következő üzenettel tudod kipróbálni:</p>
+    <pre class="txt"><code>Érdekes dolgok zajlanak mostanában az ELTE IK háza környékén. Az #iot területén főleg @adamtarcsi fogja össze a projekteket. Minden érdeklődőt szeretettel vár a Szoftvertechnológia laborjába.</code></pre></li>
+    <li><p>Készíts egy olyan oldalt, ahol egy új üzenetet lehet felvenni. Ehhez az alábbi adatok megadása szükséges:</p>
+    <ol style="list-style-type: lower-alpha">
+    <li>Kategória (legördülő mező, kötelező, értékei: Fontos, Érdekes, Vicces, Kötelező)</li>
+    <li>Beküldő neve (szöveges mező, kötelező)</li>
+    <li>Beküldő email címe (szöveges mező, email formátumú)</li>
+    <li>Üzenet (többsoros beviteli mező, kötelező, ehhez használd az 1. feladatban elkészített komponenst)</li>
+    </ol>
+    <p>A felküldött adatokat szerveroldalon ellenőrizni kell, és a hibaüzeneteket felsorolásként az oldalon feltüntetni. Helyes adatok megadása esetén az adatokat fájlba el kell menteni. Tárolni kell a létrehozás dátumát és egy egyedi sorszámot is, amelyet pl. a <code>time()</code> függvény állít elő.</p></li>
+    <li><p>Készíts egy oldalt, ahol az üzeneteket egymás alá kilistázod. A megjelenítendő üzenetekben a hashtageket (pl. <code>#iot</code>) és az felhasználókat (pl. <code>@adamtarcsi</code>) az 1. feladat leírása szerinti hivatkozásokká kell tenni. Legyen lehetőség kategóriákra és beküldő nevére szűrni az oldalon!</p></li>
+    <li><p>Legyen lehetőség egy üzenet esetén tetszésünket kinyilvánítani (lájkolni). Az üzenetnél írjuk ki, hogy eddig hányan lájkolták már azt. Egy <code>like</code> feliratú hivatkozásra vagy gombra kattintva AJAX kéréssel jelezzük a szervernek az újabb lájkot, és válaszként jelenítsük meg, hogy hány lájknál tart az üzenet. Ehhez érdemes pl. HTML5 data attribútumban tárolni az üzenet azonosítóját, pl. <code>data-id=&quot;123&quot;</code>. Ezt az adott elem <code>getAttribute(&quot;data-id&quot;)</code> metódusával lehet kiolvasni. Periodikusan (pl. 2 másodpercente) kérdezzük le a szervertől minden üzenet esetén, hogy mennyinél tart a lájk-szám, és ezeket jelenítsük is meg.</p></li>
+    </ol>
+  </body>
+</html>
