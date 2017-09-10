@@ -1,7 +1,6 @@
 #include <vector>
-#include <stdint.h>
 
-void bubbleSort(std::vector<int> &in)
+void bubbleSort (std::vector<int>& in)
 {
 	for (size_t i = in.size() - 1; i > 1; --i)
 	{
@@ -9,9 +8,9 @@ void bubbleSort(std::vector<int> &in)
 		{
 			if (in[j + 1] < in[j])
 			{
-				int temp = in[j + 1];
-				in[j + 1] = in[j];
-				in[j] = temp;
+				in[j]			^= in[j + 1];
+				in[j + 1] ^= in[j];
+				in[j]			^= in[j + 1];
 			}
 		}
 	}
