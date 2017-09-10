@@ -9,7 +9,7 @@ void bubbleSort (std::vector<int>& in)
 			if (in[j + 1] < in[j])
 			{
 				in[j]			^= in[j + 1];
-				in[j + 1] ^= in[j];
+				in[j + 1] 		^= in[j];
 				in[j]			^= in[j + 1];
 			}
 		}
