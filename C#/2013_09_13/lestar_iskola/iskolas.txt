@@ -1,0 +1,741 @@
+﻿10045
+Forint László
+12 c 12
+10073
+Ábrahám András
+10 b 61
+10159
+Pozsonyi Zoltán
+10 b 28
+10339
+Rabb Viktor
+12 c 11
+11144
+Papp-Váry Árpád
+11 b 72
+11780
+Geszti András
+9 b 75
+12130
+Bagó Zsuzsa
+11 b 74
+12494
+Erdős Mária
+11 a 22
+13911
+Salánki Imre
+12 d 95
+14332
+Lázár Mihály
+11 c 58
+14882
+Gombocz Zoltán
+9 a 99
+14951
+Perkalt Tamás
+12 b 11
+15004
+Rákosréti Pál
+11 b 19
+15677
+Korbermüller Stefán
+12 d 23
+16239
+Lukács Zsolt
+12 c 43
+16252
+Löblin János
+12 c 46
+16539
+Molnár László
+12 d 96
+16784
+Bíró Zsuzsa
+12 d 35
+17248
+Sánta Henriett
+9 c 82
+17335
+Bakos Péter
+10 a 91
+17523
+Komár Károly
+10 a 90
+17730
+Kéry Zsuzsanna
+12 b 75
+18868
+Hifner Judit
+9 b 34
+19510
+Lacfi Dániel
+11 c 50
+20020
+Titz József
+9 a 1
+20605
+Breitner Miklós
+11 a 67
+20612
+György Miklós
+10 b 51
+20758
+Balogh Ádám
+12 c 69
+20812
+Stezák Mihály
+9 b 29
+22286
+Péterfy Ferenc
+9 c 11
+22415
+Vavrik Antal
+11 a 89
+23106
+Kincsey Enikő
+12 a 78
+23270
+Ormos István
+12 c 68
+23721
+Ladányi József
+9 b 84
+24684
+Galli Miklós
+10 c 50
+25000
+Gerlecz Krisztián
+11 b 24
+25423
+Mészáros Lajos
+9 c 20
+26031
+Anda István
+9 b 57
+26300
+Szuhanek Gabriella
+10 b 74
+26455
+Valentinyi Krisztina
+12 d 38
+28143
+Ötvös Miklós
+11 c 89
+28757
+Almádi Zsuzsanna
+11 a 30
+28941
+Zeuhomer Zoltán
+9 b 85
+29163
+Varga Attila
+11 c 72
+31696
+Alsószentiványi Lajos
+9 a 75
+32020
+Zackáts Alfréd
+10 b 41
+32108
+Szejtli József
+11 b 55
+33064
+Csürke György
+9 a 55
+33323
+Kocsis Julianna
+11 c 55
+34119
+Tordai Ferenc
+9 c 70
+34285
+Kovács András
+12 b 50
+34473
+Darvai János
+9 b 69
+35034
+Korom Lajos
+12 b 87
+35107
+Hebrank Erzsébet
+9 b 47
+35390
+Fehér László
+12 a 69
+36041
+Horváth Alexandra
+11 b 71
+36392
+Berényi Balázs
+9 b 33
+37958
+Suba János
+10 a 59
+38057
+Kiss Márta
+12 d 18
+38584
+Nemes Béla
+12 b 64
+38635
+Bernard Delomenie
+12 b 64
+38658
+Sziklai Márta
+12 d 15
+38853
+Szénási István
+12 c 38
+39801
+Szil Éva
+11 a 23
+40110
+Hackstock Karl
+10 b 38
+40262
+Mikusovszky Henrietta
+10 c 14
+40512
+Pege Gyula
+10 a 47
+40958
+Bodnár Tibor
+9 a 32
+41056
+Veres Éva
+11 b 78
+41182
+Balatoni Henrik
+12 c 86
+41316
+Hegedűs János
+9 b 26
+41718
+Burger László
+12 c 50
+41904
+Rébay Lajos
+10 c 96
+41981
+Gerger János
+12 a 80
+42126
+Bieber András
+12 b 58
+42623
+Tóth Tímea
+12 b 83
+43623
+Gellai Imre
+12 a 88
+44059
+Mayer-Rönne Harald
+12 d 46
+44106
+Kanev László
+10 b 31
+45169
+Bodor László
+12 b 29
+45273
+Pinkóczy Boglárka
+12 d 96
+45523
+Strack János
+12 c 52
+45682
+Tréfás Miklós
+9 a 34
+45698
+Földvári György
+12 b 22
+46033
+Nagy György
+9 b 8
+46152
+Barabás Judit
+10 c 32
+46169
+Beri Mónika
+12 b 95
+46333
+Fazekas László
+9 c 65
+46437
+Huber Zoltán
+12 b 20
+46707
+Ménesi Gábor
+12 b 30
+46853
+Diós Erika
+11 a 42
+46867
+Illyés Domokos
+10 b 81
+47165
+Csapó Attila
+10 b 14
+47330
+Herwerth Bernadett
+12 a 68
+47374
+Horváth Tibor
+11 a 66
+47507
+Dózsa Ferenc
+12 c 62
+47738
+Répás Lajos
+9 c 36
+47771
+Mester Edit
+10 c 69
+47839
+Kovács Gyula
+12 a 92
+47849
+Vörös Rebeka
+9 b 80
+48078
+Hosszu Borbála
+12 c 67
+48193
+Grünvald Imre
+9 a 36
+48470
+Ádám Gyöngyi
+12 c 70
+48535
+Kausay Kristóf
+9 c 91
+48716
+Mórász Ferenc
+12 a 32
+49242
+Zákány Ildikó
+12 c 64
+49326
+Nagy Zoltán
+11 c 24
+49348
+Miholek István
+12 b 43
+49368
+Györgyi János
+12 c 30
+49441
+Váraljai Péter
+9 b 19
+49531
+Szolnoki József
+10 b 39
+49769
+Petrus Katalin
+12 b 70
+49950
+Szerdaelyi László
+12 b 35
+50116
+Kircsev Mária
+12 c 11
+50445
+Schwolz Róbert
+12 b 12
+51078
+Madari Ilona
+11 c 12
+51342
+Bányai István
+9 b 65
+52063
+Port Ferenc
+11 b 5
+52165
+Komondy Ferenc
+12 a 81
+53066
+Lovas Sándor
+11 a 15
+53367
+Hámori Sándor
+12 a 13
+53445
+Szécsi György
+12 a 21
+53519
+Putnoki Erika
+10 b 91
+53792
+Hegedűs Béla
+12 d 51
+53978
+Hollendonner János
+10 b 52
+54080
+Bajnok Gábor
+12 a 97
+54163
+Balázs György
+10 a 77
+54225
+Valicsek Tamás
+9 b 75
+54639
+Cséry Pál
+12 d 62
+54979
+Herda Ignác
+9 a 32
+55225
+Jankó Géza
+11 b 5
+55528
+Kovács Edina
+11 b 57
+56005
+Diether Heermann
+12 b 11
+56090
+Salga Gyula
+10 a 95
+57867
+Árkai György
+12 b 38
+58019
+Mocsáry György
+11 c 83
+58297
+Mihály Ibolya
+11 c 85
+58680
+Betegh Sándor
+11 c 53
+58725
+Karsay Katalin
+11 c 43
+58877
+Takato Fujitsima
+9 a 42
+58892
+Bíró József
+10 c 3
+58928
+Marosi Krisztina
+10 a 34
+60168
+Oláh Adrienn
+9 a 12
+60322
+Ujhellyi András
+9 b 41
+60531
+Ziebedits János
+12 c 10
+60783
+Terták Ádám
+11 c 25
+61418
+Jandó Ferenc
+12 c 61
+61454
+Adamó Krisztina
+12 a 33
+61523
+Káldy József
+11 a 18
+61744
+Szűcs Zoltán
+12 d 23
+62109
+Véber Zoltán
+12 b 47
+62583
+Szmeretzky Beatrix
+10 a 93
+62785
+Rónai András
+10 c 77
+63845
+Kádár Tibor
+9 b 66
+65681
+Demjén Zoltán
+12 c 44
+65950
+Gereben Zoltán
+12 a 61
+66871
+Horváth József
+11 a 85
+67019
+Veréb Sarolta
+12 c 93
+67515
+Harsányi Ilona
+11 b 30
+67564
+Áts József
+12 a 44
+67818
+Tarczai András
+9 b 26
+67829
+Vizi László
+11 a 48
+67903
+Herwerth Ottó
+9 c 61
+68798
+Pióker Balázs
+9 b 10
+69536
+Virág Attila
+12 a 86
+69562
+Czeglédi Ferenc
+12 d 29
+70075
+Karikás György
+11 c 52
+70368
+Klopfer Tamás
+10 b 78
+70523
+Vékony István
+9 a 38
+70817
+Horváth Tünde
+11 a 82
+71127
+Kepecs Gábor
+11 a 91
+72129
+Kerekes Tünde
+12 b 46
+72862
+Hamvay Péter
+12 c 72
+72909
+Ivicz Anna
+12 a 27
+73729
+Vanek Anna
+9 c 59
+73817
+Győry Géza
+9 a 54
+73855
+Buttafava Andrea
+11 c 99
+73894
+Rokka Barbara
+12 a 27
+74043
+András Attila
+9 a 43
+74592
+Nagy Etelka
+10 a 44
+74682
+Varju Kinga
+11 b 68
+75768
+Kertai Gyula
+12 b 34
+75976
+Ujhelyi István
+12 a 60
+76585
+Regős Judit
+12 a 79
+77192
+Bloomfield David
+11 b 61
+77371
+Tasi László
+10 a 12
+78118
+Botka Edina
+9 a 49
+78981
+Kovács Judit
+12 d 71
+79441
+Csicsay Edit
+11 a 12
+79542
+Tar István
+9 b 93
+79713
+Wolff Péter
+12 a 1
+79901
+Végvári József
+9 a 60
+80453
+Molnár Attila
+9 a 60
+80475
+Saád András
+12 d 75
+80788
+Karass Thomas
+11 c 32
+80968
+Herbert Diana
+11 b 98
+81331
+Pincze Gábor
+11 b 63
+81606
+Szalkai Tünde
+12 d 32
+81637
+Szebenyi Péter
+11 c 45
+82116
+Moravecz István
+9 c 45
+83489
+Domonkos Magdolna
+11 c 14
+83619
+Turay Attila
+12 b 30
+83643
+Bálványossy Péter
+11 b 1
+84861
+Bordás György
+9 b 42
+85151
+Egedi József
+11 a 49
+85190
+Tanyik János
+12 a 63
+85353
+Borz Miklós
+10 a 70
+85460
+Czifra Sánor
+9 b 39
+85493
+Schnábel Zoltán
+12 a 17
+85964
+Nagy László
+11 b 97
+85977
+Szűcs Beatrix
+12 d 67
+86042
+Szűcs Ferenc
+10 c 71
+86176
+Szluha Dénes
+11 a 65
+86194
+Szabó Hajnalka
+12 b 34
+86361
+Havasi Raymond
+11 a 14
+86521
+Futó Péter
+11 b 51
+86809
+Tóbel Mária
+9 a 41
+87236
+Vágó Zoltán
+12 a 93
+87651
+Fazekas Gabriella
+11 c 84
+87685
+Hangyál Józseg
+12 a 6
+88737
+Farkas Katalin
+12 b 15
+89093
+Kollár Erika
+11 c 93
+89558
+Sziget Pál
+9 a 87
+89872
+Cseh Andrea
+10 c 49
+91015
+Pásztor Péter
+12 c 6
+91393
+Jászóy Zsolt
+10 b 83
+91842
+Szabó János
+10 b 98
+92047
+Papp Ildikó
+9 a 43
+92349
+Erdélyi Szilvia
+11 a 38
+92393
+Szabó Lajos
+11 a 13
+93143
+Tanay István
+9 c 52
+94090
+Páti Gyula
+9 b 34
+94648
+Szabó Gabriella
+9 b 33
+94656
+Monos Sebestyén
+10 a 0
+94904
+Botnyeva Szvetlana
+12 d 81
+95900
+Hargitai Zoltán
+10 a 46
+97121
+Várnai György
+12 d 59
+97624
+Hantó Kálmán
+9 a 40
+97818
+Donkó József
+12 c 11
+97942
+Grúber Veronika
+12 c 71
+98252
+Szűcs Péter
+9 b 76
+98409
+Szakállas Csaba
+10 b 97
+99114
+Varga Ágnes
+10 b 33
+99194
+Eperjesi Szilvia
+12 b 39
+99493
+Sági László
+12 c 57
+99553
+Vágó Zsolt
+9 c 8
+99753
+Tóth Péter
+9 a 10

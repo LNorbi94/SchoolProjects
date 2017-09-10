@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nyomtató megrendelése</title>
+<style type="text/css">
+body {
+	background-color: #CCC;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+</style>
+</head>
+
+<body>
+<h2 align="center">Nyomtató megrendelése
+</h2>
+<form action="mailto:valaki@valalhol" method="post" enctype="text/plain">
+<p align="left">Megrendelő neve: <input size="30" maxlength="50" type="text" /></p> 
+<p align="left">Cím: <input size="30" maxlength="50" type="text" /></p> 
+<p align="left">E-mail: <input type="text" size="10" maxlength="50" /> @ <input size="10" maxlength="50" type="text" /></p>
+<p align="left">&nbsp;</p>
+<p align="left">Választott nyomtatók:</p>
+<input type="checkbox"  checked="checked"/>EPSON Stylus D88 Plus<br />
+<input type="checkbox" />HP P2014 Laserjet<br />
+<input type="checkbox" />XEROX Phaser 6120N<br />
+<input type="checkbox" />CANON PIXMA MP600R<br />
+<p>Darabszám: 
+  <select>
+<option selected>1
+<option>2
+<option>3
+</select></p>
+ <input type="radio" checked="checked"/> Kézpénz<br />
+<input type="radio" /> Átutalás
+<p>
+Egyéb kívánság:<br />
+<textarea cols="55" rows="5"></textarea></p>
+<p>
+<input type="submit" value="Küldés"/><input type="reset" value="Törlés" />
+</p>
+</form>
+</body>
+</html>

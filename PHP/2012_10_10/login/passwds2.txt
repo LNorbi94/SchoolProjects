@@ -1,0 +1,5 @@
+egy:ketto
+harom:negy
+en:te
+Norbi:blabla
+haha:hehe

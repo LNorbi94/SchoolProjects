@@ -1,0 +1,12 @@
+kiss pista
+4 20 8,5
+nagy peter
+5 22 7,5
+varga marcell
+3 32 6,5
+nagy adam
+5 23 7
+cser david
+5 20 9
+kiss kornel
+2 5 3

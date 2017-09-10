@@ -1,0 +1,15 @@
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #999;
+}
+#form {
+	width:500px;
+	background-color: #000;
+	color: #FFF;
+	padding-top: 55px;
+	padding-left:75px;
+	padding-bottom:55px;
+	border: 1px solid #FFF;
+	margin-top: 20%;
+	margin-left:35%;
+}

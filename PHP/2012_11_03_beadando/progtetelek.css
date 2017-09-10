@@ -1,0 +1,26 @@
+body {
+	background-color: #666;
+}
+.fejlec {
+	color: #FFF;
+	background-color: #C60;
+	text-align: center;
+}
+.tabla {
+	margin-top: 10px;
+	margin-left: 35%;
+	border: thin solid #000;
+}
+.kod {
+	color: #CCC;
+	height: 300px;
+	width:400px;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.kod2 {
+	color: #CCC;
+	text-align:center;
+	padding: 10px;
+}

@@ -1,0 +1,9 @@
+﻿SELECT * FROM Alkalmazottak;
+SELECT Alkalmazottak.Név, Alkalmazottak.Részleg, Alkalmazottak.Belépés FROM Alkalmazottak ORDER BY Alkalmazottak.Részleg, Alkalmazottak.Belépés DESC;
+SELECT TOP 10 Alkalmazottak.Név, Alkalmazottak.Beosztás, Alkalmazottak.Alapbér FROM Alkalmazottak ORDER BY Alkalmazottak.Alapbér DESC;
+SELECT Alkalmazottak.Részleg, Alkalmazottak.Belépés, Alkalmazottak.Alapbér, Alkalmazottak.Név, Alkalmazottak.Törzsszám, Alkalmazottak.Szület_idő, Alkalmazottak.Nyelvpótl FROM Alkalmazottak WHERE (((Alkalmazottak.Részleg)="Asztalos Műhely") AND ((Alkalmazottak.Belépés)=1991 Or (Alkalmazottak.Belépés)=1995 Or (Alkalmazottak.Belépés)=1998) AND ((Alkalmazottak.Alapbér)>50000)) ORDER BY Alkalmazottak.Belépés, Alkalmazottak.Név;
+SELECT Count(Alkalmazottak.Név) AS Dolgozókszáma, Avg(Alkalmazottak.Alapbér) AS Átlagbér FROM Alkalmazottak;
+SELECT Alkalmazottak.Név, Year(Date())-[Belépés] AS Munkaévek FROM Alkalmazottak ORDER BY Year(Date())-[Belépés] DESC;
+SELECT Alkalmazottak.Részleg, Avg(Alkalmazottak.Alapbér) AS Átlagbér FROM Alkalmazottak GROUP BY Alkalmazottak.Részleg;
+SELECT Alkalmazottak.Részleg, Count(Alkalmazottak.Név) AS CountOfNév FROM Alkalmazottak WHERE (((Alkalmazottak.Belépés) Between 1985 And 1995)) GROUP BY Alkalmazottak.Részleg;
+SELECT Beosztás FROM Alkalmazottak GROUP BY Beosztás;

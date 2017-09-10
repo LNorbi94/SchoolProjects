@@ -1,0 +1,24 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #999999;
+}
+.regisztracio {
+	padding: 40px;
+	width: 350px;
+	margin-top: 2%;
+	margin-left: 35%;
+	background-color: #CCCCCC;
+	border: thin solid #FFFFFF;
+	text-align:right;
+}
+
+.termekek_tabla {
+	border: thin solid #CCCCCC;
+}
+
+.termekek_fotabla {
+	border: thin solid #CCCCCC;
+	padding: 2px;
+	width: 500px;
+	margin-left: 35%;
+}

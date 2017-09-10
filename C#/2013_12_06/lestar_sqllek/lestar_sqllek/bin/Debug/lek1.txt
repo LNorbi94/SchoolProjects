@@ -1,0 +1,2 @@
+﻿SELECT * FROM Alkalmazottak;
+SELECT Alkalmazottak.Név, Alkalmazottak.Részleg, Alkalmazottak.Belépés FROM Alkalmazottak ORDER BY Alkalmazottak.Részleg, Alkalmazottak.Belépés DESC;

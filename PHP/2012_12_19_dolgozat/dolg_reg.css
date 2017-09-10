@@ -1,0 +1,15 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #999999;
+}
+.keret {
+	padding: 20px;
+	width: 25%;
+	margin-left: 35%;
+	background-color: #000000;
+	border: thin solid #FFFFFF;
+	text-align: right;
+	margin-top: 10%;
+}

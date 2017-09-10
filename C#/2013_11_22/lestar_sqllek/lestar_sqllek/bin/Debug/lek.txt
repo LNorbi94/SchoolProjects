@@ -1,0 +1,5 @@
+﻿DELETE FROM Autók WHERE Szín='piros'
+DELETE FROM Autók WHERE Szín='kék'
+DELETE FROM Autók WHERE Szín='lila'
+DELETE FROM Autók WHERE Szín='krém'
+DELETE FROM Autók WHERE Szín='bordó'
