@@ -1,0 +1,7 @@
+int main()
+{
+	unsigned a;
+    a = 0;
+    cin >> b;
+    b = 5;
+}

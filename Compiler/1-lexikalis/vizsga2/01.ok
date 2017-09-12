@@ -1,0 +1,8 @@
+int main()
+{
+  fix x;
+  x = 3.14;
+  x = x + 2.7 + 5.;
+  cout << intpart(x);
+  cout << fraction(x);
+}

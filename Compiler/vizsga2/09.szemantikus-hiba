@@ -1,0 +1,4 @@
+int main()
+{
+  cout << intpart(3) + fraction(2.7+5.1);
+}

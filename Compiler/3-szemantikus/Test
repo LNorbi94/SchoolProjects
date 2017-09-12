@@ -1,0 +1,33 @@
+
+
+egeszresz:
+    EGESZRESZ OLVAS AZONOSITO PONTOSVESSZO
+    {
+        if( szimb_tabla.count( *$3 ) == 0 )
+        {
+            std::cerr << d_loc__.first_line << ": A(z) '" << *$3 << "' valtozo nincs deklaralva." << std::endl;
+            exit(1);
+        }
+        else
+        {
+            $$ = new kifejezes_leiro( d_loc__.first_line, Egesz );
+        }
+        delete $3;
+    }
+;
+
+tortresz:
+    TORTRESZ BALZAROJEL AZONOSITO JOBBZAROJEL
+    {
+        if( szimb_tabla.count( *$3 ) == 0 )
+        {
+            std::cerr << d_loc__.first_line << ": A(z) '" << *$3 << "' valtozo nincs deklaralva." << std::endl;
+            exit(1);
+        }
+        else
+        {
+            $$ = new kifejezes_leiro( d_loc__.first_line, Egesz );
+        }
+        delete $3;
+    }
+;
